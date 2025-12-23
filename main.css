@@ -1,0 +1,78 @@
+:root {
+  font-family: "Figtree", sans-serif;
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-5: hsl(0, 0%, 42%);
+  --Gray-9: hsl(0, 0%, 7%);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--White);
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+main img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+main .learning {
+  width: fit-content;
+  background-color: var(--Yellow);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 900;
+  color: var(--Gray-9);
+}
+
+main h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--Gray-9);
+}
+
+main p {
+  max-width: 336px;
+  font-size: 16px;
+}
+
+main h1 + p {
+  color: var(--Gray-5);
+  line-height: 1.5;
+}
+
+main .by {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 10px 0 0;
+}
+
+main .by img {
+  margin-right: 20px;
+  margin-bottom: 0;
+  max-width: 50px;
+}
+
+main .by p {
+  margin-bottom: 0;
+  font-weight: 900;
+  color: var(--Gray-9);
+}
+
+.attribution {
+  bottom: 1rem;
+  position: absolute;
+}
